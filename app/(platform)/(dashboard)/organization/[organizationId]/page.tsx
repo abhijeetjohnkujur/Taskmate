@@ -2,7 +2,7 @@
 const organizationIdpage = async () => {
     return (
         <div>
-            organizationIdpage
+            Organization Page
         </div>
     )
 }
