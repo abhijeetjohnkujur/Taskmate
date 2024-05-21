@@ -56,7 +56,6 @@ const Sidebar = ({
             <NavItem.Skeleton />
             <NavItem.Skeleton />
             <NavItem.Skeleton />
-            
           </div>
         </>
       )
