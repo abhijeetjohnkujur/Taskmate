@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { Plus } from "lucide-react"
 import { useLocalStorage } from "usehooks-ts";
-import { useOrganization, useOrganizationList } from "@clerk/nextjs";
+import { useAuth, useOrganization, useOrganizationList } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -17,6 +17,7 @@ interface SidebarProps {
 const Sidebar = ({
     storageKey = "sidebar-state"
   }: SidebarProps) => {
+
 
     const [expanded, setExpanded] = useLocalStorage<Record<string,any>>(storageKey,{})
     
@@ -44,7 +45,21 @@ const Sidebar = ({
     }
 
     if(!isLoadedOrg || !isLoadedOrgList || userMemberships.isLoading){
-      return <Skeleton />
+      return (
+        <>
+          <div className="flex items-center gap-x-4 justify-between mb-2">
+          <Skeleton className="h-10 w-[50%]" />
+          <Skeleton className="h-10 w-10" />
+          </div>
+          <div className="space-y-2">
+            <NavItem.Skeleton />
+            <NavItem.Skeleton />
+            <NavItem.Skeleton />
+            <NavItem.Skeleton />
+            
+          </div>
+        </>
+      )
     }
 
   return (
