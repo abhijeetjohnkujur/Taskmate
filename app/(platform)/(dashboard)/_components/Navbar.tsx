@@ -4,7 +4,9 @@ import { OrganizationSwitcher, UserButton } from "@clerk/nextjs";
 import { Plus } from "lucide-react";
 import { MobileSidebar } from "./MobileSidebar";
 
-const Navbar = () => {
+const Navbar = async () => {
+    
+
   return (
     <nav className="fixed z-50 px-4 top-0 w-full h-14 border-b shadow-sm bg-white flex items-center">
         <MobileSidebar />
@@ -23,7 +25,6 @@ const Navbar = () => {
 
         <div className="ml-auto flex items-center gap-x-2">
                 <OrganizationSwitcher
-                hidePersonal
                 afterCreateOrganizationUrl={"/organization/:id"}
                 afterSelectOrganizationUrl={"/organization/:id"}
                 afterLeaveOrganizationUrl={"/select-org"}
