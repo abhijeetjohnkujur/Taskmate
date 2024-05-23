@@ -1,5 +1,3 @@
-import { create } from "@/actions/create-board"
-import { Button } from "@/components/ui/button"
 import { db } from "@/lib/db"
 import Board from "./_components/Board"
 import Form from "./_components/Form"
