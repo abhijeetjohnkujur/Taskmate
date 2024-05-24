@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { OrganizationSwitcher, UserButton } from "@clerk/nextjs";
 import { Plus } from "lucide-react";
 import { MobileSidebar } from "./MobileSidebar";
+import Formpopover from "@/components/ui/form/Formpopover";
 
 const Navbar = async () => {
     
@@ -14,13 +15,21 @@ const Navbar = async () => {
             <div className="hidden md:flex">
                 <Logo />
             </div>
+            <Formpopover
+            align="start"
+            side="bottom"
+            sideOffset={18}
+            >
             <Button size="sm" className="rounded-sm hidden md:block py-1.5 px-2">
                 Create
             </Button>
+            </Formpopover>
             
+            <Formpopover>
             <Button size={"sm"} className="rounded-md block md:hidden">
                 <Plus className="w-4 h-4" />
             </Button>
+            </Formpopover>
         </div>
 
         <div className="ml-auto flex items-center gap-x-2">
