@@ -36,7 +36,6 @@ const ListForm = () => {
 
     const { execute, fieldErrors } = useAction(createList,{
         onSuccess: (data) => {
-            console.log("Working")
             toast.success(`List "${data.title}" created`)
             disableEditing()
             router.refresh()
@@ -58,12 +57,13 @@ const ListForm = () => {
 
     const onSubmit = (formData: FormData) => {
         const title = formData.get("title") as string;
-        const boardId = formData.get("boradId") as string;
+        const boardId = formData.get("boardId") as string;
 
         execute({
             title,
             boardId
         })
+
     }
 
     if(isEditing) {

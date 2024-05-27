@@ -52,6 +52,8 @@ const Formpopover = ({
 
 
         execute({ title, image })
+        console.log("Title:",title)
+        console.log("Image:",image)
     }
 
   return (
