@@ -8,7 +8,7 @@ import { FormInput } from "@/components/ui/form/FormInput";
 import { useAction } from "@/hooks/use-action";
 import { updateList } from "@/actions/update-list";
 import { toast } from "sonner";
-import { fromJSON } from "postcss";
+import ListOptions from "./ListOptions";
 
 interface ListHeaderProps {
     data: List;
@@ -104,6 +104,10 @@ data
             {title}
         </div>
          )}
+         <ListOptions
+         onAddCard={()=>{}} 
+         data={data}
+         />
     </div>
   )
 }
