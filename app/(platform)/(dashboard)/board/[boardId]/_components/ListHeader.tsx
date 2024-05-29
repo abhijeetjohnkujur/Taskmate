@@ -12,10 +12,12 @@ import ListOptions from "./ListOptions";
 
 interface ListHeaderProps {
     data: List;
+    onAddCard: () => void;
 }
 
 const ListHeader = ({
-data
+data,
+onAddCard
 }:ListHeaderProps) => {
     
     const [title,setTitle] = useState(data.title);
@@ -105,7 +107,7 @@ data
         </div>
          )}
          <ListOptions
-         onAddCard={()=>{}} 
+         onAddCard={onAddCard} 
          data={data}
          />
     </div>
