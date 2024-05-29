@@ -13,8 +13,8 @@ import { useEventListener, useOnClickOutside } from "usehooks-ts";
 
 interface CardFormProps {
     listId: string;
-    enableEditing: () => {}
-    disableEditing: () => {}
+    enableEditing: () => void
+    disableEditing: () => void
     isEditing: boolean
 }
 
