@@ -7,7 +7,7 @@ const isProtectedRoute = createRouteMatcher([
   '/clerk(.*)',
 ]);
 
-const isPublicRoute = createRouteMatcher(['/', '/sign-in', '/sign-up']); // Add your sign-in and sign-up routes here
+const isPublicRoute = createRouteMatcher(['/', '/sign-in', '/sign-up','/api/webhook']); // Add your sign-in and sign-up routes here
 
 export default clerkMiddleware((auth, req) => {
   // If the user is not logged in and the route is protected, redirect to sign in
