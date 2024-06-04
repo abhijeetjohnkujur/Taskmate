@@ -54,7 +54,7 @@ const BoardIdLayout = async ({
 
     return (
         <div 
-        className="relative h-full bg-no-repeat bg-cover bg-center"
+        className="relative h-full bg-no-repeat bg-cover bg-center overflow-hidden"
         style={{
             backgroundImage: `url(${board.imageFullUrl})`
         }}>
