@@ -60,7 +60,7 @@ const handler = async (data: InputType): Promise<ReturnType> => {
             }
         })
 
-        if(isPro)
+        if(!isPro)
             {
                 await IncrementAvailableCount(); 
             }
