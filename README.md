@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+![Logo](https://res.cloudinary.com/dems22iqs/image/upload/v1718253694/Github%20Projects/Taskmate/TASKMATE_iftlox.png)
 
-First, run the development server:
+# Taskmate
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Taskmate is a task management application built using some of the latest and most powerful web development technologies.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Create your own workspaces based on task categories.
+- Authentication enabled.
+- Protected routes.
+- Activity section to check activities such as deletion, creation, and updating of task boards, workspaces, and lists.
+- Drag and drop features in the workspace dashboard.
+- Monthly subscription using Stripe.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Tech Stack
 
-## Learn More
+**Client:** Next.js v.14, Zustand, TypeScript, Tailwind, Shadcn/ui, Tanstack Query, Zod, Sonner, Hello-pangea/dnd, Unsplash
 
-To learn more about Next.js, take a look at the following resources:
+**Database:** Prisma, Supabase
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Authentication:** Clerk
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**Payment Management:** Stripe
 
-## Deploy on Vercel
+## Screenshots
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Landing Page
+![App Screenshot](https://res.cloudinary.com/dems22iqs/image/upload/v1718208135/Github%20Projects/Taskmate/Landing_Page_lkpl6e.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Workspace
+![App Screenshot](https://res.cloudinary.com/dems22iqs/image/upload/v1718208138/Github%20Projects/Taskmate/Workspace_pn2t14.png)
+
+### Activity Logs
+![App Screenshot](https://res.cloudinary.com/dems22iqs/image/upload/v1718208135/Github%20Projects/Taskmate/activity_xulqpf.png)
+
+### Settings
+![App Screenshot](https://res.cloudinary.com/dems22iqs/image/upload/v1718208136/Github%20Projects/Taskmate/Settings_bo1rhj.png)
+
+### Board Dashboard
+![App Screenshot](https://res.cloudinary.com/dems22iqs/image/upload/v1718208138/Github%20Projects/Taskmate/Workspace_dashboard_k1ihlw.png)
+
+## Lessons Learned
+
+### What I Learned:
+
+- How to write type-safe JavaScript to avoid bugs.
+- Using Zod schema for form validations.
+- How to use Tailwind CSS with Next.js.
+- How to use Zustand for state management.
+- How to use Supabase for database management.
+- How to use Stripe for payment management.
+- How to use Clerk for authentication.
+- How to use Next.js API routes.
+- How to use Next.js protected routes.
+- Creating server actions
+
+### Challenges
+
+- Implementing drag and drop features for the boards and lists.
